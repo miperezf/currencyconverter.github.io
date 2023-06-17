@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Poppins:wght@500&family=Unbounded:wght@200;300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #8e9eab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 120vh;
+}
+
+.currency-navbar{
+    background-color:transparent;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+
+.logo-img{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg);
+    height: 40px;
+    width: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    margin: 10px 10px 10px 20px
+}
+.logo-name{
+    color: black;
+    float: left;
+}
+
+.currency-navbar, a{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.section-converter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10px;
+}
+
+::selection{
+    color: #fff;
+    background: #675afe;
+}
+
+.wrapper{
+    background-color: #8e9eab;
+    border: 1px solid black;
+    width: 370px;
+    padding: 30px;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+    margin: 20px;
+}
+
+.wrapper h1{
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.wrapper form{
+    margin: 40px 0 20px 0;
+}
+
+form :where(input, select, button){
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+  }
+  form p{
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  form input{
+    height: 50px;
+    font-size: 17px;
+    padding: 0 15px;
+    border: 1px solid #999;
+  }
+  form input:focus{
+    padding: 0 14px;
+    border: 2px solid #675AFE;
+  }
+  form .drop-list{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .drop-list .select-box{
+    display: flex;
+    width: 115px;
+    height: 45px;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    border: 1px solid black;
+  }
+  .select-box img{
+    max-width: 21px;
+  }
+  .select-box select{
+    width: auto;
+    font-size: 16px;
+    background: none;
+    margin: 0 -5px 0 5px;
+  }
+  .select-box select::-webkit-scrollbar{
+    width: 8px;
+  }
+  .select-box select::-webkit-scrollbar-track{
+    background: #fff;
+  }
+  .select-box select::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 8px;
+    border-right: 2px solid #ffffff;
+  }
+  .drop-list .icon{
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 22px;
+  }
+  form .exchange-rate{
+    font-size: 17px;
+    margin: 20px 0 30px;
+  }
+  form button{
+    height: 52px;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    background: #675AFE;
+    transition: 0.3s ease;
+  }
+  form button:hover{
+    background: #4534fe;
+  }
